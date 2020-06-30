@@ -474,8 +474,11 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  display: block;
+  max-width: 60%;
   height: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .img-thumbnail {
