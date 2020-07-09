@@ -220,7 +220,7 @@
 
                     <!-- FOOTER  -->
                     <div class="modal-footer flex-center justify-content-center">
-                        <button type="button" class="portfolio-modal close" data-dismiss="modal"><h5>Close</h5></button>
+                        <button type="button" onclick="refreshParent()" class="portfolio-modal close" data-dismiss="modal"><h5>Close</h5></button>
                     </div>
             </div>
         </div>
@@ -246,6 +246,13 @@
                 // load content from value of data-remote url
                 modal.find('.modal-body').load(button.data("remote"));
              });
+
+            function refreshParent(){
+                //Add newrecord.
+                console.log("Reloading");
+                opener.location.reload(); //This will refresh parent window.
+                window.close(); //Close child window. You may also use self.close(); 
+            }
         </script>
     </body>
 </html>
