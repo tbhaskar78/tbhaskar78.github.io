@@ -4452,13 +4452,23 @@ input[type=button].btn-block {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: 0.375rem;
+  /*border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
   display: block;
   max-width: 60%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
+  */
+
+  width: auto;
+  height: 22vh;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .card-img,
