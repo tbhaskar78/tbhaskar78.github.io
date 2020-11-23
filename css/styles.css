@@ -10346,3 +10346,19 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+.avatar {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    /*background-image: url('assets/img/profilePic.png'); */
+    /* make a square container */
+    width: 250px;
+    height: 290px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top top;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 70%;
+}
